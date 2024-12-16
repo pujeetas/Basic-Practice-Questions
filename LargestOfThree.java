@@ -1,9 +1,11 @@
+import java.util.Scanner;
 
 public class LargestOfThree {
     public static void main(String[] args) {
-       int a =1320;
-       int b =540;
-       int c =34320;
+       Scanner sc = new Scanner(System.in);
+       int a = sc.nextInt();
+       int b = sc.nextInt();
+       int c = sc.nextInt();
 
         int largest = a;
 
