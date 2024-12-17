@@ -1,3 +1,5 @@
+//Bitonic Array -An array that first increases and then decreases, or can be strictly increasing or strictly decreasing.
+
 public class FindMaximumInBitonicArray {
     public static void main(String[] args) {
         int[] a = { 10, 8, 6, 4, 2 };
