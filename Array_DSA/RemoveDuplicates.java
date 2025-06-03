@@ -1,15 +1,18 @@
 public class RemoveDuplicates {
     public static void main(String[] args) {
-        int[] arr = { 1, 2, 3, 4, 4, 4, 4 };
-        int count = 0;
+        int[] nums = { 1, 1, 1, 2, 2, 3, 3, 4 };
 
-        for (int i = 1; i < arr.length; i++) {
-            if (arr[i] == arr[i - 1]) {
-                count++;
+        int P1 = 1;
+        int P2 = 1;
+
+        for (int i = 0; i < nums.length-1; i++) {
+
+            if (nums[P2] != nums[P2 - 1]) {
+                nums[P1] = nums[P2];
+                P1++;
             }
+            P2++;
         }
-        for (int i = 0; i <= count; i++) {
-            System.out.println(arr[i]);
-        }
+        System.out.println(P1);
     }
 }
